@@ -1,0 +1,504 @@
+/**
+ * AGROCOL HS SAS - Custom Styles
+ * Customizations for the AGROCOL website
+ */
+
+/* ========================================
+   REMOVE CURSOR EFFECTS (Mouse Bubble)
+   ======================================== */
+.mouseCursor,
+.cursor-outer,
+.cursor-inner {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* ========================================
+   ADJUST FLAG SIZE IN LANGUAGE SELECTOR
+   ======================================== */
+.header-top-section .header-top-wrapper .head-right .flag-wrap .flag {
+    width: 24px !important;
+    height: 24px !important;
+    top: 0px !important;
+    left: 10px !important;
+}
+
+.header-top-section .header-top-wrapper .head-right .flag-wrap .flag img,
+.header-section-4 .header-top-4 .head-right .flag-wrap .flag img {
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.inv {max-width: 330px !important;
+    height: auto;}
+/* Adjust selector padding to accommodate smaller flag */
+.header-top-section .header-top-wrapper .head-right .flag-wrap .nice-select {
+    padding: 0 0 0 38px !important;
+}
+
+/* ========================================
+   HEADER TOP HIDE/SHOW LOGIC
+   ======================================== */
+
+/* Barra superior - transición suave con transform */
+.header-top-section {
+    transition: transform 0.3s ease, opacity 0.3s ease !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+/* Cuando el header es sticky, ocultar barra superior con slide up */
+.header-top-section.hidden {
+    transform: translateY(-100%) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Evitar el glitch del sticky header - sobrescribir animación original */
+#header-sticky.sticky {
+    animation: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ========================================
+   MENÚ CENTRADO CON LOGO AL LADO DE HOME
+   ======================================== */
+
+/* Header principal: Menú centrado */
+.header-main {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Logo oculto por defecto - posicionado inline con el menú */
+.header-main .header-logo {
+    display: inline-flex !important;
+    align-items: center !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    transform: scale(0.8) !important;
+    transition: all 0.3s ease !important;
+    margin-right: 0 !important;
+}
+
+/* Logo y menú juntos centrados */
+.header-main .mean__menu-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Cuando la barra superior se oculta, mostrar logo al lado de Home */
+.header-main.has-logo .header-logo {
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: auto !important;
+    transform: scale(1) !important;
+    margin-right: 50px !important; /* Espacio equivalente a un item del menú */
+}
+
+/* Separar el botón Let's Talk del menú */
+.header-right {
+    margin-left: 50px !important; /* Espacio equivalente a un item del menú */
+}
+
+/* En móviles/tablets, mostrar logo siempre */
+@media (max-width: 1199px) {
+    .header-main {
+        justify-content: space-between !important;
+    }
+    
+    .header-main .header-logo {
+        opacity: 1 !important;
+        visibility: visible !important;
+        width: auto !important;
+        transform: scale(1) !important;
+        margin-right: 0 !important;
+    }
+    
+    .header-main .mean__menu-wrapper {
+        justify-content: flex-end !important;
+    }
+    
+    .header-right {
+        margin-left: 20px !important;
+    }
+}
+
+/* ========================================
+   LOGO SIZE ADJUSTMENTS
+   ======================================== */
+
+/* Offcanvas Logo (Mobile Menu) - Medium size */
+.offcanvas__logo img {
+    max-width: 160px !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+/* Header Top Logo - Small size */
+.top-logo img {
+    max-width: 120px !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+/* Main Header Logo - Medium size */
+.header-logo img {
+    max-width: 150px !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+/* Footer Logo - Medium size */
+.footer-logo img {
+    max-width: 180px !important;
+    height: auto !important;
+    width: auto !important;
+    margin-bottom: 20px;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 991px) {
+    .header-logo img {
+        max-width: 130px !important;
+    }
+    
+    .top-logo img {
+        max-width: 100px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-top-section .header-top-wrapper .head-right .flag-wrap .flag {
+        display: block !important;
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    .header-top-section .header-top-wrapper .head-right .flag-wrap .flag img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    .header-top-section .header-top-wrapper .head-right .flag-wrap .nice-select {
+        padding: 0 0 0 30px !important;
+    }
+    
+    /* Mobile logo adjustments */
+    .offcanvas__logo img {
+        max-width: 140px !important;
+    }
+    
+    .top-logo img {
+        max-width: 90px !important;
+    }
+    
+    .header-logo img {
+        max-width: 110px !important;
+    }
+    
+    .footer-logo img {
+        max-width: 150px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .top-logo img {
+        max-width: 80px !important;
+    }
+    
+    .header-logo img {
+        max-width: 100px !important;
+    }
+}
+
+/* ========================================
+   WHATSAPP FLOATING BUTTON
+   ======================================== */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 25px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    color: #fff;
+}
+
+/* ========================================
+   BACK TO TOP BUTTON - NO DELAY
+   ======================================== */
+#back-top {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* ========================================
+   CENTRAR LOGO EN TOPBAR
+   ======================================== */
+.header-top-section .header-top-wrapper {
+    position: relative !important;
+}
+
+.header-top-section .header-top-wrapper .top-logo {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+}
+
+/* ========================================
+   AJUSTAR BANDERA DEL SELECTOR DE IDIOMA
+   ======================================== */
+.flag-wrap {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.flag-wrap .flag {
+    width: 28px !important;
+    height: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-radius: 3px !important;
+}
+
+.flag-wrap .flag img {
+    width: 28px !important;
+    height: 20px !important;
+    object-fit: cover !important;
+}
+
+/* ========================================
+   CIRCULOS DE CONTACTO EN FAQ
+   ======================================== */
+.faq-left-items ul li .icon {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+}
+
+.faq-left-items ul li .icon i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* ========================================
+   LANGUAGE TOGGLE SWITCH - NEUMORPHIC STYLE
+   ======================================== */
+.language-toggle-container {
+    display: inline-block;
+    position: relative;
+}
+
+.language-toggle {
+    position: relative;
+    width: 85px;
+    height: 42px;
+    background: #e0e5ec;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+        9px 9px 16px rgba(163, 177, 198, 0.6),
+        -9px -9px 16px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.language-toggle:hover {
+    box-shadow: 
+        12px 12px 20px rgba(163, 177, 198, 0.7),
+        -12px -12px 20px rgba(255, 255, 255, 0.6);
+}
+
+.language-toggle:active {
+    box-shadow: 
+        inset 6px 6px 12px rgba(163, 177, 198, 0.4),
+        inset -6px -6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.language-toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(145deg, #f0f4f7, #d9dfe6);
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 
+        4px 4px 8px rgba(163, 177, 198, 0.5),
+        -4px -4px 8px rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.language-toggle.active .language-toggle-slider {
+    transform: translateX(43px);
+    box-shadow: 
+        -4px 4px 8px rgba(163, 177, 198, 0.5),
+        4px -4px 8px rgba(255, 255, 255, 0.9);
+}
+
+.language-toggle-flag {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.15));
+}
+
+.language-toggle-bg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 9px;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(20%);
+}
+
+.language-toggle-bg.flag-en {
+    left: 9px;
+}
+
+.language-toggle-bg.flag-es {
+    right: 9px;
+}
+
+.language-toggle.active .language-toggle-bg.flag-en {
+    opacity: 0.15;
+    filter: grayscale(50%);
+}
+
+.language-toggle.active .language-toggle-bg.flag-es {
+    opacity: 0.5;
+    filter: grayscale(0%);
+}
+
+.language-toggle:not(.active) .language-toggle-bg.flag-en {
+    opacity: 0.5;
+    filter: grayscale(0%);
+}
+
+.language-toggle:not(.active) .language-toggle-bg.flag-es {
+    opacity: 0.15;
+    filter: grayscale(50%);
+}
+
+/* Language label text */
+.language-toggle-text {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 700;
+    color: #6b7a8f;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    letter-spacing: 0.5px;
+}
+
+.language-toggle-text.text-en {
+    left: 12px;
+}
+
+.language-toggle-text.text-es {
+    right: 12px;
+}
+
+.language-toggle.active .language-toggle-text.text-en {
+    opacity: 0.4;
+    color: #9ca8b8;
+}
+
+.language-toggle.active .language-toggle-text.text-es {
+    opacity: 1;
+    color: #4a5568;
+}
+
+.language-toggle:not(.active) .language-toggle-text.text-en {
+    opacity: 1;
+    color: #4a5568;
+}
+
+.language-toggle:not(.active) .language-toggle-text.text-es {
+    opacity: 0.4;
+    color: #9ca8b8;
+}
+
+/* ========================================
+   FORM SUCCESS MESSAGE ANIMATIONS
+   ======================================== */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#form-success-message {
+    animation: slideDown 0.5s ease-out;
+}
+
+#form-success-message i {
+    animation: scaleIn 0.6s ease-out;
+}
