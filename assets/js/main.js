@@ -1032,13 +1032,34 @@
     });
 
     /* ================================
-       Preloader Js Start - Faster Load
+       Preloader Js Start - Fast Initial Load
     ================================ */
     function loader() {
-        $(window).on('load', function() {
-            // Animate loader off screen faster
-            $(".preloader").addClass('loaded');                    
-            $(".preloader").delay(200).fadeOut(300);                       
+        // Hide preloader when DOM is ready and critical images loaded
+        $(document).ready(function() {
+            // Get critical hero images
+            const heroImages = document.querySelectorAll('.hero-section img, .header-logo img');
+            const imagePromises = [];
+            
+            heroImages.forEach(img => {
+                if (img.complete) {
+                    return;
+                }
+                const promise = new Promise((resolve) => {
+                    img.onload = resolve;
+                    img.onerror = resolve; // Resolve even on error to not block
+                });
+                imagePromises.push(promise);
+            });
+            
+            // Wait for critical images or timeout after 1.5 seconds
+            Promise.race([
+                Promise.all(imagePromises),
+                new Promise(resolve => setTimeout(resolve, 1500))
+            ]).then(() => {
+                $(".preloader").addClass('loaded');
+                $(".preloader").delay(100).fadeOut(300);
+            });
         });
     }
     loader();
