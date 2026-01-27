@@ -1032,13 +1032,13 @@
     });
 
     /* ================================
-       Preloader Js Start
+       Preloader Js Start - Faster Load
     ================================ */
     function loader() {
         $(window).on('load', function() {
-            // Animate loader off screen
+            // Animate loader off screen faster
             $(".preloader").addClass('loaded');                    
-            $(".preloader").delay(600).fadeOut();                       
+            $(".preloader").delay(200).fadeOut(300);                       
         });
     }
     loader();

@@ -1,0 +1,54 @@
+/* Performance Optimization Styles */
+
+/* Reduce animation delays for faster perceived load */
+.wow {
+    animation-duration: 0.5s !important;
+}
+
+/* Optimize preloader performance */
+.preloader {
+    will-change: opacity, transform;
+}
+
+.preloader.loaded {
+    transition: opacity 0.3s ease-out !important;
+}
+
+/* Improve image rendering performance */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Optimize scrolling performance */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* GPU acceleration for animations */
+.float-bob-x,
+.float-bob-y,
+.swiper-slide,
+.wow {
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Optimize hero section */
+.hero-bg {
+    will-change: opacity;
+}
+
+/* Reduce motion for better performance on mobile */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
