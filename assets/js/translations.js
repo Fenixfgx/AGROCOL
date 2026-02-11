@@ -205,7 +205,7 @@ const translations = {
             product2: { name: "Italian Ruscus" },
             product3: { name: "Pygmy Date Palm" },
             product4: { name: "Lilyturf" },
-            product5: { name: "Vibornium" },
+            product5: { name: "Viburnum" },
             product6: { name: "Boxwood" },
             product7: { name: "Leather Fern" },
             product8: { name: "Cocculus" },
@@ -279,9 +279,9 @@ const translations = {
             q5: "5. How can I place an order for your products?",
             a1: "AGROCOL provides comprehensive B2B export services including international commercial management, quality assurance, phytosanitary compliance, and specialized logistics coordination for natural foliage from Colombia.",
             a2: "Yes, we specialize exclusively in the export of certified natural foliage and ornamental products from Colombia, serving major international markets with complete regulatory compliance and quality assurance.",
-            a3: "We cultivate and export a wide variety of foliage such as Pittosporum, Italian Ruscus, Pygmy Date Palm, Lilyturf, Vibornium, Boxwood, Leather Fern, Cocculus, and Eucalyptus varieties, among others.",
-            a4: "Minimum order quantities vary by product type and destination market. Please contact our export team at agrocolhs@gmail.com or +57 317 404 0803 for specific information tailored to your requirements.",
-            a5: "Contact us directly via email at agrocolhs@gmail.com or WhatsApp +57 317 404 0803. Our export team will guide you through product selection, documentation requirements, and logistics coordination.",
+            a3: "We cultivate and export a wide variety of foliage such as Pittosporum, Italian Ruscus, Pygmy Date Palm, Lilyturf, Viburnum, Boxwood, Leather Fern, Cocculus, and Eucalyptus varieties, among others.",
+            a4: "Minimum order quantities vary by product type and destination market. Please contact our export team at contact@agrocol.com or +57 317 404 0803 for specific information tailored to your requirements.",
+            a5: "Contact us directly via email at contact@agrocol.com or WhatsApp +57 317 404 0803. Our export team will guide you through product selection, documentation requirements, and logistics coordination.",
             question1: {
                 q: "What products does AGROCOL export?",
                 a: "We specialize in natural foliage and ornamental products from Colombia, all certified and fully compliant with international phytosanitary standards."
@@ -657,7 +657,7 @@ const translations = {
             product2: { name: "Ruscus" },
             product3: { name: "Palma Robelina" },
             product4: { name: "Cinta Liriope" },
-            product5: { name: "Vibornium" },
+            product5: { name: "Viburnum" },
             product6: { name: "Brillantina" },
             product7: { name: "Helecho" },
             product8: { name: "Cocculus" },
@@ -730,9 +730,9 @@ const translations = {
             q5: "5. ¿Cómo puedo hacer un pedido de sus productos?",
             a1: "AGROCOL brinda servicios integrales de exportación B2B incluyendo gestión comercial internacional, aseguramiento de calidad, cumplimiento fitosanitario y coordinación logística especializada para follajes naturales desde Colombia.",
             a2: "Sí, nos especializamos exclusivamente en la exportación de follajes naturales certificados y productos ornamentales de Colombia, sirviendo a los principales mercados internacionales con completo cumplimiento regulatorio y aseguramiento de calidad.",
-            a3: "Cultivamos y exportamos una amplia variedad de follajes como Pittosporum, Ruscus, Palma Robelina, Cinta Liriope, Vibornium, Brillantina, Helecho, Cocculus y variedades de Eucalipto, entre otros.",
-            a4: "Las cantidades mínimas de pedido varían según el tipo de producto y mercado de destino. Por favor contacte a nuestro equipo de exportación en agrocolhs@gmail.com o +57 317 404 0803 para información específica adaptada a sus requerimientos.",
-            a5: "Contáctenos directamente por email a agrocolhs@gmail.com o WhatsApp +57 317 404 0803. Nuestro equipo de exportación le guiará en la selección de productos, requisitos de documentación y coordinación logística.",
+            a3: "Cultivamos y exportamos una amplia variedad de follajes como Pittosporum, Ruscus, Palma Robelina, Cinta Liriope, Viburnum, Brillantina, Helecho, Cocculus y variedades de Eucalipto, entre otros.",
+            a4: "Las cantidades mínimas de pedido varían según el tipo de producto y mercado de destino. Por favor contacte a nuestro equipo de exportación en contact@agrocol.com o +57 317 404 0803 para información específica adaptada a sus requerimientos.",
+            a5: "Contáctenos directamente por email a contact@agrocol.com o WhatsApp +57 317 404 0803. Nuestro equipo de exportación le guiará en la selección de productos, requisitos de documentación y coordinación logística.",
             question1: {
                 q: "¿Qué productos exporta AGROCOL?",
                 a: "Nos especializamos en follajes naturales y productos ornamentales de Colombia, todos certificados y en pleno cumplimiento con los estándares fitosanitarios internacionales."
