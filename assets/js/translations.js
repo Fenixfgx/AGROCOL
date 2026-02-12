@@ -167,8 +167,8 @@ const translations = {
             sectionSubtitle: "Why Choose AGROCOL",
             sectionTitle: "Our Commitment to Excellence",
             aboutUs: "About Us",
-            title: "Currently We're Cultivating & Selling Natural Foliage",
-            description: "With years of experience in the floriculture industry, we provide professional B2B export services that connect Colombian foliage producers with global markets.",
+            title: "We Export & Distribute Premium Natural Foliage",
+            description: "With years of experience in the floriculture industry, we provide professional B2B export services that connect Colombian natural foliage with global markets.",
             item1: {
                 title: "Certified Quality",
                 description: "100% certified natural foliage with complete traceability and international compliance"
@@ -179,7 +179,7 @@ const translations = {
             },
             item3: {
                 title: "Sustainable Practices",
-                description: "Environmentally responsible cultivation aligned with global sustainability standards"
+                description: "Environmentally responsible sourcing aligned with global sustainability standards"
             },
             item4: {
                 title: "Reliable Partnership",
@@ -274,14 +274,14 @@ const translations = {
             whyChoose: "Por qué elegirnos",
             q1: "1. What services does AGROCOL offer?",
             q2: "2. Do you specialize in foliage exporting?",
-            q3: "3. What types of foliage do you grow?",
+            q3: "3. What types of foliage do you export?",
             q4: "4. What are your minimum order requirements?",
             q5: "5. How can I place an order for your products?",
             a1: "AGROCOL provides comprehensive B2B export services including international commercial management, quality assurance, phytosanitary compliance, and specialized logistics coordination for natural foliage from Colombia.",
             a2: "Yes, we specialize exclusively in the export of certified natural foliage and ornamental products from Colombia, serving major international markets with complete regulatory compliance and quality assurance.",
-            a3: "We cultivate and export a wide variety of foliage such as Pittosporum, Italian Ruscus, Pygmy Date Palm, Lilyturf, Viburnum, Boxwood, Leather Fern, Cocculus, and Eucalyptus varieties, among others.",
-            a4: "Minimum order quantities vary by product type and destination market. Please contact our export team at contact@agrocol.com or +57 317 404 0803 for specific information tailored to your requirements.",
-            a5: "Contact us directly via email at contact@agrocol.com or WhatsApp +57 317 404 0803. Our export team will guide you through product selection, documentation requirements, and logistics coordination.",
+            a3: "We export a wide variety of foliage such as Pittosporum, Italian Ruscus, Pygmy Date Palm, Lilyturf, Viburnum, Boxwood, Leather Fern, Cocculus, and Eucalyptus varieties, among others.",
+            a4: "Minimum order quantities vary by product type and destination market. Please contact our export team at contact@agrocolhs.com or +57 317 404 0803 for specific information tailored to your requirements.",
+            a5: "Contact us directly via email at contact@agrocolhs.com or WhatsApp +57 317 404 0803. Our export team will guide you through product selection, documentation requirements, and logistics coordination.",
             question1: {
                 q: "What products does AGROCOL export?",
                 a: "We specialize in natural foliage and ornamental products from Colombia, all certified and fully compliant with international phytosanitary standards."
@@ -560,6 +560,7 @@ const translations = {
             sectionLabel: "Acerca de Nuestra Empresa",
             satisfiedClients: "Satisfacción del Cliente",
             organicFoliage: "Follajes orgánicos",
+            freshOrnamental: "Plantas Ornamentales Frescas",
             naturalFoliage: "Follajes naturales",
             certifiedNatural: "Follajes Naturales Certificados",
             naturalExport: "Productos Naturales de Exportación",
@@ -619,8 +620,8 @@ const translations = {
             sectionSubtitle: "Por Qué Elegir AGROCOL",
             sectionTitle: "Nuestro Compromiso con la Excelencia",
             aboutUs: "Sobre Nosotros",
-            title: "Actualmente Cultivamos y Vendemos Follajes Naturales",
-            description: "Con años de experiencia en la industria de la floricultura, brindamos servicios profesionales de exportación B2B que conectan a productores colombianos de follajes con mercados globales.",
+            title: "Exportamos y Distribuimos Follajes Naturales Premium",
+            description: "Con años de experiencia en la industria de la floricultura, brindamos servicios profesionales de exportación B2B que conectan follajes naturales colombianos con mercados globales.",
             item1: {
                 title: "Calidad Certificada",
                 description: "Follajes naturales 100% certificados con trazabilidad completa y cumplimiento internacional"
@@ -631,7 +632,7 @@ const translations = {
             },
             item3: {
                 title: "Prácticas Sostenibles",
-                description: "Cultivo ambientalmente responsable alineado con estándares globales de sostenibilidad"
+                description: "Abastecimiento ambientalmente responsable alineado con estándares globales de sostenibilidad"
             },
             item4: {
                 title: "Alianza Confiable",
@@ -725,14 +726,14 @@ const translations = {
             sectionTitle: "Preguntas Más Frecuentes",
             q1: "1. ¿Qué servicios ofrece AGROCOL?",
             q2: "2. ¿Se especializan en exportación de follajes?",
-            q3: "3. ¿Qué tipos de follaje cultivan?",
+            q3: "3. ¿Qué tipos de follaje exportan?",
             q4: "4. ¿Cuáles son sus requisitos de pedido mínimo?",
             q5: "5. ¿Cómo puedo hacer un pedido de sus productos?",
             a1: "AGROCOL brinda servicios integrales de exportación B2B incluyendo gestión comercial internacional, aseguramiento de calidad, cumplimiento fitosanitario y coordinación logística especializada para follajes naturales desde Colombia.",
             a2: "Sí, nos especializamos exclusivamente en la exportación de follajes naturales certificados y productos ornamentales de Colombia, sirviendo a los principales mercados internacionales con completo cumplimiento regulatorio y aseguramiento de calidad.",
-            a3: "Cultivamos y exportamos una amplia variedad de follajes como Pittosporum, Ruscus, Palma Robelina, Cinta Liriope, Viburnum, Brillantina, Helecho, Cocculus y variedades de Eucalipto, entre otros.",
-            a4: "Las cantidades mínimas de pedido varían según el tipo de producto y mercado de destino. Por favor contacte a nuestro equipo de exportación en contact@agrocol.com o +57 317 404 0803 para información específica adaptada a sus requerimientos.",
-            a5: "Contáctenos directamente por email a contact@agrocol.com o WhatsApp +57 317 404 0803. Nuestro equipo de exportación le guiará en la selección de productos, requisitos de documentación y coordinación logística.",
+            a3: "Exportamos una amplia variedad de follajes como Pittosporum, Ruscus, Palma Robelina, Cinta Liriope, Viburnum, Brillantina, Helecho, Cocculus y variedades de Eucalipto, entre otros.",
+            a4: "Las cantidades mínimas de pedido varían según el tipo de producto y mercado de destino. Por favor contacte a Nuestro equipo en contact@agrocolhs.com o +57 317 404 0803 para información específica adaptada a sus requerimientos.",
+            a5: "Contáctenos directamente por email a contact@agrocolhs.com o WhatsApp +57 317 404 0803. Nuestro equipo le guiará en la selección de productos, requisitos de documentación y coordinación logística.",
             question1: {
                 q: "¿Qué productos exporta AGROCOL?",
                 a: "Nos especializamos en follajes naturales y productos ornamentales de Colombia, todos certificados y en pleno cumplimiento con los estándares fitosanitarios internacionales."
